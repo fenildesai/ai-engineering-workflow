@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DBLens — Hackathon Submission</title>
+<style>
+:root {
+  --ink:#18212b; --muted:#5c6874; --panel:#ffffff; --line:#e5e9ee;
+  --soft:#f6f8fa; --accent:#6d2fa0; --accent2:#f1e9f8; --green:#177245;
+}
+* { box-sizing:border-box; }
+body { margin:0; font-family:Inter,Segoe UI,Arial,sans-serif; background:#eef1f4; color:var(--ink); }
+.page { max-width:1040px; margin:32px auto; background:var(--panel); box-shadow:0 10px 35px rgba(0,0,0,.08); }
+.hero { padding:44px 52px 34px; border-bottom:1px solid var(--line); }
+.eyebrow { text-transform:uppercase; letter-spacing:.13em; font-size:12px; color:var(--accent); font-weight:800; }
+h1 { font-size:44px; line-height:1; margin:10px 0 12px; }
+.tagline { font-size:21px; color:var(--muted); margin:0; }
+.content { padding:36px 52px 52px; }
+.section { margin-bottom:34px; }
+.num { display:inline-flex; width:27px; height:27px; border-radius:50%; background:var(--accent); color:#fff; align-items:center; justify-content:center; font-weight:700; margin-right:8px; }
+h2 { font-size:22px; margin:0 0 12px; }
+p { font-size:16px; line-height:1.62; margin:0; }
+.story { background:var(--soft); border-left:4px solid var(--accent); padding:18px 20px; border-radius:8px; }
+.chips { display:flex; flex-wrap:wrap; gap:9px; margin-top:10px; }
+.chip { display:inline-block; padding:8px 11px; border:1px solid var(--line); border-radius:999px; color:#7a838c; background:#fff; font-size:13px; }
+.chip.selected { color:var(--accent); background:var(--accent2); border-color:#c8a9df; font-weight:600; }
+.chip.selected b { color:var(--green); }
+.other { width:100%; margin-top:4px; padding:10px 12px; background:#faf7fc; border-radius:7px; font-size:13px; }
+.answer { padding:14px 16px; border:1px solid var(--line); border-radius:9px; background:#fff; font-weight:700; }
+.benefit { margin-top:14px; padding:17px 19px; background:#f7f4fa; border-radius:9px; font-size:16px; line-height:1.5; }
+.metrics { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-top:14px; }
+.metric { border:1px solid var(--line); border-radius:9px; padding:14px; text-align:center; background:#fff; }
+.metric strong { display:block; font-size:20px; color:var(--accent); margin-bottom:4px; }
+.metric span { font-size:12px; color:var(--muted); }
+.footer { padding:18px 52px; border-top:1px solid var(--line); color:var(--muted); font-size:12px; }
+@media(max-width:700px) {
+  .hero,.content,.footer{padding-left:24px;padding-right:24px}
+  h1{font-size:36px}
+  .metrics{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="hero">
+  <div class="eyebrow">Bring Your A-Game — AI Agent Idea</div>
+  <h1>DBLens</h1>
+  <p class="tagline">From database signals to answers — before they become incidents.</p>
+</header>
+
+<div class="content">
+<section class="section">
+  <h2><span class="num">1</span>What would you like to call your AI agent?</h2>
+  <div class="answer">DBLens</div>
+</section>
+
+<section class="section"><h2><span class="num">2</span>The problem</h2><div class="story"><p><strong>Database problems are a shared operational challenge across multiple application teams.</strong> When an application becomes slow, times out or database utilisation changes unexpectedly, engineers and DBAs must manually connect evidence across database metrics, Query Store, waits, blocking, execution plans, deployments, maintenance and pipeline activity. This increases time-to-diagnose, creates repeated investigation effort and consumes scarce DBA capacity. When a database change or specialist decision is then required, teams may also need Database CoE guidance or approval, adding further hand-offs and evidence preparation.</p></div><div class="benefit"><strong>Opportunity:</strong> Move from “something is slow — start investigating and ask the DBA” to “DBLens has already correlated the signals, identified likely contributing factors, prepared the evidence and knows when specialist DBA or CoE involvement is required.”</div></section>
+
+<section class="section"><h2><span class="num">3</span>The solution</h2><div class="story"><p>DBLens is an AI Database Reliability Agent that turns fragmented database telemetry, operational history and approved CoE knowledge into actionable intelligence. A colleague can ask, “Why has Staging been slow today?” DBLens gathers real telemetry, compares it with normal behaviour, analyses query regressions, waits, blocking and workload changes, and correlates them with deployments, maintenance or pipeline activity. It can also proactively surface emerging risks, compare symptoms with previous incidents and, where a recommended database change needs specialist governance, identify the relevant CoE guidance and prepare the evidence for review. <strong>AI handles investigation and preparation; DBAs and the Database CoE retain control of specialist decisions and approvals.</strong></p></div></section>
+
+<section class="section"><h2><span class="num">4</span>What will your AI agent do?</h2><div class="chips"><span class="chip selected"><b>✓</b> Receive information</span><span class="chip selected"><b>✓</b> Understand and analyze information</span><span class="chip selected"><b>✓</b> Generate content or recommendations</span><span class="chip selected"><b>✓</b> Help make decisions or prioritize</span><span class="chip"><b>○</b> Execute high-risk database changes</span><span class="chip selected"><b>✓</b> Coordinate workflows and people</span><span class="chip selected"><b>✓</b> Interact with and support users</span><span class="chip selected"><b>✓</b> Monitor and support risk management</span><span class="chip selected"><b>✓</b> Others</span><div class="other"><strong>Other:</strong> Detect and investigate database issues; correlate query regressions, blocking/deadlocks and workload anomalies with releases and pipelines; proactively surface emerging risks; reuse historical incident knowledge; generate evidence-backed recommendations; and prepare CoE guidance/evidence packs when specialist review is required.</div></div></section>
+
+<section class="section"><h2><span class="num">5</span>Where would your AI agent get its information from?</h2><div class="chips"><span class="chip selected"><b>✓</b> Microsoft Teams</span><span class="chip selected"><b>✓</b> SharePoint</span><span class="chip selected"><b>✓</b> Power BI</span><span class="chip selected"><b>✓</b> Jira</span><span class="chip selected"><b>✓</b> Confluence</span><span class="chip selected"><b>✓</b> ServiceNow</span><span class="chip selected"><b>✓</b> Internal website or knowledge base</span><span class="chip selected"><b>✓</b> Others</span><div class="other"><strong>Other:</strong> Azure SQL / SQL Managed Instance telemetry, Query Store, DMVs, execution plans, waits, blocking/deadlocks, maintenance history, Azure DevOps deployments and pipelines, monitoring platforms, DBA runbooks, historical incidents, Database CoE standards and approved database engineering guidance.</div></div></section>
+
+<section class="section"><h2><span class="num">6</span>How many Aviva colleagues would use this agent?</h2><div class="answer">More than 50 people — DBAs, application engineers, platform/support engineers and authorised delivery teams across multiple applications.</div></section>
+
+<section class="section"><h2><span class="num">7</span>Where should the AI agent's output go?</h2><div class="chips"><span class="chip selected"><b>✓</b> Copilot Chat</span><span class="chip selected"><b>✓</b> Microsoft Teams</span><span class="chip selected"><b>✓</b> Power BI</span><span class="chip selected"><b>✓</b> Jira</span><span class="chip selected"><b>✓</b> Confluence</span><span class="chip selected"><b>✓</b> ServiceNow</span><span class="chip selected"><b>✓</b> Internal website or knowledge base</span><span class="chip selected"><b>✓</b> Others</span><div class="other"><strong>Other:</strong> DBLens investigation workspace and cross-team Database Health Radar highlighting databases that need attention. Findings can enrich incidents/tickets with evidence and a draft timeline; where CoE involvement is required, DBLens can prepare a structured evidence pack for human review.</div></div></section>
+
+<section class="section"><h2><span class="num">8</span>What type of value will this AI agent create?</h2><div class="chips"><span class="chip selected"><b>✓</b> Knowledge access</span><span class="chip selected"><b>✓</b> Automation</span><span class="chip selected"><b>✓</b> Decision support</span><span class="chip selected"><b>✓</b> Insights and analysis</span><span class="chip selected"><b>✓</b> Innovation</span><span class="chip selected"><b>✓</b> Capability building</span><span class="chip selected"><b>✓</b> Experience enhancement</span><span class="chip selected"><b>✓</b> Risk and governance</span></div><div class="benefit"><strong>Business value:</strong> The primary value is improved database reliability: <strong>↓ Mean Time to Diagnose · ↓ Mean Time to Resolve · ↓ repeated DBA/CoE effort · ↑ proactive risk visibility.</strong><br><br>Illustratively, if 20 teams each have two database investigations per month, that is 480 investigations/year. Saving only 45 minutes of specialist investigation effort per case releases <strong>360 hours — approximately 48 working days/year</strong>. At an illustrative £60/hour loaded cost, that is <strong>~£21,600 annual capacity</strong>. Additional value can come from earlier detection, shorter incidents, fewer repeat issues, reduced application-team waiting time and better-prepared CoE engagements.<br><br><strong>How we prove it:</strong> Baseline and measure Mean Time to Diagnose, Mean Time to Resolve, DBA escalations, investigation effort, repeat incidents, proactive issues identified, time spent collecting evidence, and CoE requests that arrive complete first time. These figures are scenario assumptions for pilot validation, not claimed savings.</div></section>
+
+<section class="section"><h2><span class="num">9</span>How many people will benefit from the outcomes created by this agent?</h2><div class="answer">More than 50 colleagues — DBAs, Database CoE, application teams, support, testers and release teams benefit directly, with customers ultimately benefiting from faster diagnosis and more reliable services.</div></section>
+</div>
+
+<div class="footer">Hackathon submission draft — DBLens | AI Database Reliability Agent</div>
+</main>
+</body>
+</html>

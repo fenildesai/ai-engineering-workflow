@@ -1,0 +1,142 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Code2Carbon — Hackathon Submission</title>
+      <style>
+        :root {
+          --ink:#18212b; --muted:#5c6874; --panel:#ffffff; --line:#e5e9ee;
+          --soft:#f6f8fa; --accent:#6d2fa0; --accent2:#f1e9f8; --green:#177245;
+        }
+        * { box-sizing:border-box; }
+        body { margin:0; font-family:Inter,Segoe UI,Arial,sans-serif; background:#eef1f4; color:var(--ink); }
+        .page { max-width:1040px; margin:32px auto; background:var(--panel); box-shadow:0 10px 35px rgba(0,0,0,.08); }
+        .hero { padding:44px 52px 34px; border-bottom:1px solid var(--line); }
+        .eyebrow { text-transform:uppercase; letter-spacing:.13em; font-size:12px; color:var(--accent); font-weight:800; }
+        h1 { font-size:44px; line-height:1; margin:10px 0 12px; }
+        .tagline { font-size:21px; color:var(--muted); margin:0; }
+        .content { padding:36px 52px 52px; }
+        .section { margin-bottom:34px; }
+        .num { display:inline-flex; width:27px; height:27px; border-radius:50%; background:var(--accent); color:#fff; align-items:center; justify-content:center; font-weight:700; margin-right:8px; }
+        h2 { font-size:22px; margin:0 0 12px; }
+        p { font-size:16px; line-height:1.62; margin:0; }
+        .story { background:var(--soft); border-left:4px solid var(--accent); padding:18px 20px; border-radius:8px; }
+        .chips { display:flex; flex-wrap:wrap; gap:9px; margin-top:10px; }
+        .chip { display:inline-block; padding:8px 11px; border:1px solid var(--line); border-radius:999px; color:#7a838c; background:#fff; font-size:13px; }
+        .chip.selected { color:var(--accent); background:var(--accent2); border-color:#c8a9df; font-weight:600; }
+        .chip.selected b { color:var(--green); }
+        .other { width:100%; margin-top:4px; padding:10px 12px; background:#faf7fc; border-radius:7px; font-size:13px; }
+        .answer { padding:14px 16px; border:1px solid var(--line); border-radius:9px; background:#fff; font-weight:700; }
+        .benefit { margin-top:14px; padding:17px 19px; background:#f7f4fa; border-radius:9px; font-size:16px; line-height:1.5; }
+        .footer { padding:18px 52px; border-top:1px solid var(--line); color:var(--muted); font-size:12px; }
+        @media(max-width:700px) { .hero,.content,.footer{padding-left:24px;padding-right:24px} h1{font-size:36px} }
+      </style>
+    </head>
+    <body>
+      <main class="page">
+        <header class="hero">
+          <div class="eyebrow">Bring Your A-Game — AI Agent Idea</div>
+          <h1>Code2Carbon</h1>
+          <p class="tagline">Faster engineering. Smaller footprint.</p>
+        </header>
+        <div class="content">
+          <section class="section">
+            <h2><span class="num">1</span>What would you like to call your AI agent?</h2>
+            <div class="answer">Code2Carbon</div>
+          </section>
+
+          <section class="section">
+            <h2><span class="num">2</span>The problem</h2>
+            <div class="story"><p>Every build, test and deployment consumes compute. Slow pipelines, repeated failures, unnecessary jobs and oversized build resources do more than make developers wait — they also consume cloud capacity and money. Most teams can see individual pipeline results, but not the bigger picture of avoidable engineering waste over time.</p></div>
+          </section>
+
+          <section class="section">
+            <h2><span class="num">3</span>The solution</h2>
+            <div class="story"><p>Code2Carbon analyses pipeline and build data to identify avoidable compute waste. It highlights long-running jobs, repeated failures, duplicated work, unusual trends and optimisation opportunities. The agent explains where time and compute are being lost and turns the data into practical recommendations, combining engineering efficiency, cost awareness and sustainability in one view.</p></div>
+          </section>
+
+          <section class="section">
+            <h2><span class="num">4</span>What will your AI agent do?</h2>
+            <div class="chips"><span class="chip selected"><b>✓</b> Receive information</span>
+<span class="chip selected"><b>✓</b> Understand and analyze information</span>
+<span class="chip selected"><b>✓</b> Generate content or recommendations</span>
+<span class="chip selected"><b>✓</b> Help make decisions or prioritize</span>
+<span class="chip"><b>○</b> Execute tasks in systems</span>
+<span class="chip"><b>○</b> Coordinate workflows and people</span>
+<span class="chip"><b>○</b> Interact with and support users</span>
+<span class="chip selected"><b>✓</b> Monitor and support risk management</span>
+<span class="chip"><b>○</b> Others</span></div>
+          </section>
+
+          <section class="section">
+            <h2><span class="num">5</span>Where would your AI agent get its information from?</h2>
+            <div class="chips"><span class="chip"><b>○</b> Microsoft Teams</span>
+<span class="chip"><b>○</b> Outlook</span>
+<span class="chip selected"><b>✓</b> SharePoint</span>
+<span class="chip"><b>○</b> OneDrive</span>
+<span class="chip"><b>○</b> Word</span>
+<span class="chip selected"><b>✓</b> Excel</span>
+<span class="chip"><b>○</b> PowerPoint</span>
+<span class="chip selected"><b>✓</b> Power BI</span>
+<span class="chip"><b>○</b> Jira</span>
+<span class="chip"><b>○</b> Confluence</span>
+<span class="chip"><b>○</b> ServiceNow</span>
+<span class="chip"><b>○</b> Workday</span>
+<span class="chip"><b>○</b> CRM system like Salesforce</span>
+<span class="chip"><b>○</b> Internal website or knowledge base</span>
+<span class="chip"><b>○</b> External website</span>
+<span class="chip selected"><b>✓</b> Others</span>
+<div class="other"><strong>Other:</strong> Azure DevOps pipeline/build logs, job duration data and compute usage exports.</div></div>
+          </section>
+
+          <section class="section">
+            <h2><span class="num">6</span>How many Aviva colleagues would use this agent?</h2>
+            <div class="answer">More than 50 people</div>
+          </section>
+
+          <section class="section">
+            <h2><span class="num">7</span>Where should the AI agent's output go?</h2>
+            <div class="chips"><span class="chip selected"><b>✓</b> Copilot Chat</span>
+<span class="chip selected"><b>✓</b> Microsoft Teams</span>
+<span class="chip"><b>○</b> Outlook</span>
+<span class="chip selected"><b>✓</b> SharePoint</span>
+<span class="chip"><b>○</b> OneDrive</span>
+<span class="chip"><b>○</b> Word</span>
+<span class="chip selected"><b>✓</b> Excel</span>
+<span class="chip"><b>○</b> PowerPoint</span>
+<span class="chip selected"><b>✓</b> Power BI</span>
+<span class="chip"><b>○</b> Jira</span>
+<span class="chip"><b>○</b> Confluence</span>
+<span class="chip"><b>○</b> ServiceNow</span>
+<span class="chip"><b>○</b> Workday</span>
+<span class="chip"><b>○</b> CRM systems</span>
+<span class="chip"><b>○</b> Internal website or knowledge base</span>
+<span class="chip"><b>○</b> Others</span></div>
+          </section>
+
+          <section class="section">
+            <h2><span class="num">8</span>What type of value will this AI agent create?</h2>
+            <div class="chips"><span class="chip"><b>○</b> Knowledge access</span>
+<span class="chip"><b>○</b> Task execution</span>
+<span class="chip"><b>○</b> Automation</span>
+<span class="chip selected"><b>✓</b> Decision support</span>
+<span class="chip"><b>○</b> Content creation</span>
+<span class="chip selected"><b>✓</b> Insights and analysis</span>
+<span class="chip"><b>○</b> Innovation</span>
+<span class="chip"><b>○</b> Capability building</span>
+<span class="chip selected"><b>✓</b> Experience enhancement</span>
+<span class="chip selected"><b>✓</b> Risk and governance</span>
+<span class="chip"><b>○</b> Others</span></div>
+            <div class="benefit"><strong>Business value:</strong> Faster pipelines, lower compute usage, reduced cloud cost and more sustainable engineering practices.</div>
+          </section>
+
+          <section class="section">
+            <h2><span class="num">9</span>How many people will benefit from the outcomes created by this agent?</h2>
+            <div class="answer">More than 50 colleagues</div>
+          </section>
+        </div>
+        <div class="footer">Hackathon submission draft — concise version for initial idea validation</div>
+      </main>
+    </body>
+    </html>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ShapeAI — Hackathon Submission</title>
+<style>
+:root {
+  --ink:#18212b; --muted:#5c6874; --panel:#ffffff; --line:#e5e9ee;
+  --soft:#f6f8fa; --accent:#6d2fa0; --accent2:#f1e9f8; --green:#177245;
+}
+* { box-sizing:border-box; }
+body { margin:0; font-family:Inter,Segoe UI,Arial,sans-serif; background:#eef1f4; color:var(--ink); }
+.page { max-width:1040px; margin:32px auto; background:var(--panel); box-shadow:0 10px 35px rgba(0,0,0,.08); }
+.hero { padding:44px 52px 34px; border-bottom:1px solid var(--line); }
+.eyebrow { text-transform:uppercase; letter-spacing:.13em; font-size:12px; color:var(--accent); font-weight:800; }
+h1 { font-size:44px; line-height:1; margin:10px 0 12px; }
+.tagline { font-size:21px; color:var(--muted); margin:0; }
+.content { padding:36px 52px 52px; }
+.section { margin-bottom:34px; }
+.num { display:inline-flex; width:27px; height:27px; border-radius:50%; background:var(--accent); color:#fff; align-items:center; justify-content:center; font-weight:700; margin-right:8px; }
+h2 { font-size:22px; margin:0 0 12px; }
+p { font-size:16px; line-height:1.62; margin:0; }
+.story { background:var(--soft); border-left:4px solid var(--accent); padding:18px 20px; border-radius:8px; }
+.chips { display:flex; flex-wrap:wrap; gap:9px; margin-top:10px; }
+.chip { display:inline-block; padding:8px 11px; border:1px solid var(--line); border-radius:999px; color:#7a838c; background:#fff; font-size:13px; }
+.chip.selected { color:var(--accent); background:var(--accent2); border-color:#c8a9df; font-weight:600; }
+.chip.selected b { color:var(--green); }
+.other { width:100%; margin-top:4px; padding:10px 12px; background:#faf7fc; border-radius:7px; font-size:13px; }
+.answer { padding:14px 16px; border:1px solid var(--line); border-radius:9px; background:#fff; font-weight:700; }
+.benefit { margin-top:14px; padding:17px 19px; background:#f7f4fa; border-radius:9px; font-size:16px; line-height:1.5; }
+.metrics { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-top:14px; }
+.metric { border:1px solid var(--line); border-radius:9px; padding:14px; text-align:center; background:#fff; }
+.metric strong { display:block; font-size:20px; color:var(--accent); margin-bottom:4px; }
+.metric span { font-size:12px; color:var(--muted); }
+.footer { padding:18px 52px; border-top:1px solid var(--line); color:var(--muted); font-size:12px; }
+@media(max-width:700px) {
+  .hero,.content,.footer{padding-left:24px;padding-right:24px}
+  h1{font-size:36px}
+  .metrics{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="hero">
+  <div class="eyebrow">Bring Your A-Game — AI Agent Idea</div>
+  <h1>ShapeAI</h1>
+  <p class="tagline">From business intent to delivery-ready stories.</p>
+</header>
+
+<div class="content">
+<section class="section">
+  <h2><span class="num">1</span>What would you like to call your AI agent?</h2>
+  <div class="answer">ShapeAI</div>
+</section>
+
+<section class="section">
+  <h2><span class="num">2</span>The problem</h2>
+  <div class="story"><p>Turning a business idea into a development-ready user story takes more than writing a Jira ticket. Business Analysts spend time interpreting stakeholder intent, structuring requirements, identifying missing scenarios, defining acceptance criteria and preparing stories for refinement. Information can be fragmented across conversations, meeting notes, Jira and Confluence, while ambiguity or missed dependencies can lead to repeated clarification and rework during delivery. AI tools can generate stories, but the bigger opportunity is to improve the quality of thinking before engineering starts.</p></div>
+</section>
+
+<section class="section">
+  <h2><span class="num">3</span>The solution</h2>
+  <div class="story"><p>ShapeAI is an AI Business Analysis Agent that turns business intent into validated, delivery-ready requirements. A BA can provide a rough idea, meeting notes, an existing story or requirements. ShapeAI identifies gaps, asks targeted questions instead of making assumptions, shapes the story and acceptance criteria, challenges it for edge cases, dependencies and non-functional requirements, and provides a Story Readiness assessment. The BA remains in control, reviews the output and can publish the approved story into Jira.</p></div>
+</section>
+
+<section class="section">
+  <h2><span class="num">4</span>What will your AI agent do?</h2>
+  <div class="chips">
+    <span class="chip selected"><b>✓</b> Receive information</span>
+    <span class="chip selected"><b>✓</b> Understand and analyze information</span>
+    <span class="chip selected"><b>✓</b> Generate content or recommendations</span>
+    <span class="chip selected"><b>✓</b> Help make decisions or prioritize</span>
+    <span class="chip selected"><b>✓</b> Execute tasks in systems</span>
+    <span class="chip selected"><b>✓</b> Coordinate workflows and people</span>
+    <span class="chip selected"><b>✓</b> Interact with and support users</span>
+    <span class="chip selected"><b>✓</b> Monitor and support risk management</span>
+    <span class="chip selected"><b>✓</b> Others</span>
+    <div class="other"><strong>Other:</strong> Interview the BA to uncover missing requirements, challenge assumptions and edge cases, assess Story Readiness and prepare delivery-ready Jira stories.</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2><span class="num">5</span>Where would your AI agent get its information from?</h2>
+  <div class="chips">
+    <span class="chip selected"><b>✓</b> Microsoft Teams</span>
+    <span class="chip selected"><b>✓</b> Outlook</span>
+    <span class="chip selected"><b>✓</b> SharePoint</span>
+    <span class="chip selected"><b>✓</b> OneDrive</span>
+    <span class="chip selected"><b>✓</b> Word</span>
+    <span class="chip"><b>○</b> Excel</span>
+    <span class="chip"><b>○</b> PowerPoint</span>
+    <span class="chip"><b>○</b> Power BI</span>
+    <span class="chip selected"><b>✓</b> Jira</span>
+    <span class="chip selected"><b>✓</b> Confluence</span>
+    <span class="chip"><b>○</b> ServiceNow</span>
+    <span class="chip"><b>○</b> Workday</span>
+    <span class="chip"><b>○</b> CRM system like Salesforce</span>
+    <span class="chip selected"><b>✓</b> Internal website or knowledge base</span>
+    <span class="chip"><b>○</b> External website</span>
+    <span class="chip selected"><b>✓</b> Others</span>
+    <div class="other"><strong>Other:</strong> BA standards, Definition of Ready, story templates, business rules, NFR/security guidance, architecture context and previously approved requirements.</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2><span class="num">6</span>How many Aviva colleagues would use this agent?</h2>
+  <div class="answer">More than 50 people — with potential to scale across Business Analysts, Product Owners and delivery teams.</div>
+</section>
+
+<section class="section">
+  <h2><span class="num">7</span>Where should the AI agent's output go?</h2>
+  <div class="chips">
+    <span class="chip"><b>○</b> Copilot Chat</span>
+    <span class="chip selected"><b>✓</b> Microsoft Teams</span>
+    <span class="chip"><b>○</b> Outlook</span>
+    <span class="chip selected"><b>✓</b> SharePoint</span>
+    <span class="chip"><b>○</b> OneDrive</span>
+    <span class="chip selected"><b>✓</b> Word</span>
+    <span class="chip"><b>○</b> Excel</span>
+    <span class="chip"><b>○</b> PowerPoint</span>
+    <span class="chip"><b>○</b> Power BI</span>
+    <span class="chip selected"><b>✓</b> Jira</span>
+    <span class="chip selected"><b>✓</b> Confluence</span>
+    <span class="chip"><b>○</b> ServiceNow</span>
+    <span class="chip"><b>○</b> Workday</span>
+    <span class="chip"><b>○</b> CRM systems</span>
+    <span class="chip selected"><b>✓</b> Internal website or knowledge base</span>
+    <span class="chip selected"><b>✓</b> Others</span>
+    <div class="other"><strong>Other:</strong> ShapeAI workspace — with approved output published to Jira as structured stories, acceptance criteria, dependencies, NFRs, assumptions and open questions.</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2><span class="num">8</span>What type of value will this AI agent create?</h2>
+  <div class="chips">
+    <span class="chip selected"><b>✓</b> Knowledge access</span>
+    <span class="chip selected"><b>✓</b> Task execution</span>
+    <span class="chip selected"><b>✓</b> Automation</span>
+    <span class="chip selected"><b>✓</b> Decision support</span>
+    <span class="chip selected"><b>✓</b> Content creation</span>
+    <span class="chip selected"><b>✓</b> Insights and analysis</span>
+    <span class="chip selected"><b>✓</b> Innovation</span>
+    <span class="chip selected"><b>✓</b> Capability building</span>
+    <span class="chip selected"><b>✓</b> Experience enhancement</span>
+    <span class="chip selected"><b>✓</b> Risk and governance</span>
+    <span class="chip"><b>○</b> Others</span>
+  </div>
+  <div class="benefit"><strong>Business value:</strong> Reduce the effort required to move from business intent to development-ready requirements, while improving consistency and identifying ambiguity, missing scenarios and dependencies before development begins. For an illustrative team delivering 5 stories per month, reducing BA preparation from 4.5 to 1.5 hours per story could release around 180 hours — approximately 24 working days — of BA capacity per year. At an illustrative £50/hour loaded cost, that is approximately £9,000 of BA capacity per team/year. If improved story quality also avoids only one hour of clarification across a BA, developer and tester per story, the combined illustrative opportunity is approximately £18,900 per team/year.</div>
+  <div class="metrics">
+    <div class="metric"><strong>~67%</strong><span>Potential reduction in story preparation effort</span></div>
+    <div class="metric"><strong>180 hrs</strong><span>Potential BA capacity released per team/year</span></div>
+    <div class="metric"><strong>~24 days</strong><span>Potential BA working days returned per team/year</span></div>
+    <div class="metric"><strong>~£18.9K</strong><span>Illustrative total opportunity per team/year</span></div>
+  </div>
+  <div class="other"><strong>Measurement approach:</strong> These are business-case assumptions, not claimed savings. A pilot would baseline time-to-ready, preparation effort, refinement returns, clarification requests and requirement changes after sprint start to quantify actual benefits.</div>
+</section>
+
+<section class="section">
+  <h2><span class="num">9</span>How many people will benefit from the outcomes created by this agent?</h2>
+  <div class="answer">More than 50 colleagues — BAs benefit directly, while Product Owners, Developers, Testers and delivery teams benefit from clearer, better-shaped requirements.</div>
+</section>
+</div>
+
+<div class="footer">Hackathon submission draft — ShapeAI | From business intent to delivery-ready stories</div>
+</main>
+</body>
+</html>
